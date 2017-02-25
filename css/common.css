@@ -1,0 +1,44 @@
+		body {
+		   font-family: sans-serif;
+		   font-size: 14px;
+		   width: 600px;
+		   margin-left: 1cm;
+		   margin-top: 2 chm;
+		}
+		
+		h3 {color: #B03F3B;}
+
+			.axis path,
+			.axis line {
+				fill: none;
+				stroke: gray;
+				shape-rendering: crispEdges;
+				color: gray;
+			}
+			
+			.axis text {
+				font-family: sans-serif;
+				font-size: 12px;
+				color: gray;
+			}
+			
+			.bStatAxis path,
+			.bStatAxis line {
+				fill: none;
+				stroke: gray;
+				shape-rendering: crispEdges;
+				color: gray;
+			}
+			
+			.bStatAxis text {
+				font-family: sans-serif;
+				font-size: 12px;
+				color: gray;
+			}
+
+			.sliderAxis path,
+			.sliderAxis line {
+    			fill: none;
+    			stroke: white;
+			}
+	

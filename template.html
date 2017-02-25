@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sample Template for d3</title>
+		<script src="./js/d3.min.js"></script>
+	<!-- The above uses a local copy downloaded from d3.js.  Alternative is to grab from web:
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>  -->
+
+		<script src="./js/jstat.min.js"></script>
+	<!--I use jStat.js (documentation at http://jstat.github.io) for probability distributions -->
+
+	<!-- I put any general js functions and css in common files
+		<script src="./js/common.js"></script>
+		<link rel="stylesheet" href="./css/common.css" />
+	-->
+
+	<!-- some css for styling an axis; this is in my common.css file, but here for demo -->
+	<style>
+	.axis path,
+			.axis line {
+				fill: none;
+				stroke: gray;
+				shape-rendering: crispEdges;
+				color: gray;
+			}
+
+			.axis text {
+				font-family: sans-serif;
+				font-size: 14px;
+				color: gray;
+			}
+	</style>
+
+	</head>
+	<body>
+
+	<h3>Sample Template for d3</h3>
+	<p>Drag any of the dots to new locations.</p>
+
+   <div>
+    <svg id="canvas" width="600" height="600"> </svg></div>
+    <!-- the above names the drawing area and specifies its size.
+        Alternatively, this could all be done within the js file using d3.
+        But I like to specify the layout, especially if the page is complicated, on
+        the page itself.  -->
+
+
+    <!-- this calls the js file and starts the action -->
+		<script type="text/javascript"  src="./js/template.js"></script>
+
+	<!-- there can be multiple svg objects and multiple calls to js files,
+	      but be careful of namespace issues -->
+
+
+	</body>
+</html>
